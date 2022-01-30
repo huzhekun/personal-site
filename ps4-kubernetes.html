@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Zhekun (Victor) Hu's Blog</title>
+        <title>Kubernetes on a PS4</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
@@ -35,41 +35,51 @@
             </div>
         </nav>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+        <header class="masthead" style="background-image: url('assets/img/post-bg.jpg')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="site-heading">
-                            <h1>Zhekun Hu's Blog</h1>
-                            <span class="subheading">Proudly hosted on a PS4 Kubernetes cluster!</span>
+                        <div class="post-heading">
+                            <h1>How I got Kubernetes to run on a PS4</h1>
+                            <h2 class="subheading">Pain and suffering in the linux kernel config</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Zhekun Hu</a>
+                                on January 30th, 2022
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- Main Content-->
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="ps4-kubernetes.html">
-                            <h2 class="post-title">How I got Kubernetes to run on a PS4</h2>
-                            <h3 class="post-subtitle">Pain and suffering in the linux kernel config.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="about.html">Zhekun Hu</a>
-                            on January 30th, 2022
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>What is a PS4? At its core it is a x86 PC, running 8 of AMD's Jaguar cores from it's worst days at a measly 1.6Ghz. It is so weak, that the system menu was offloaded to a separate ARM chip in order to conserve system resources. You might ask, why try to run Kubernetes on this weak, old piece of hardware? Surely there are better nodes out there for a fraction of the price? To which I have a single answer:</p>
+                        <blockquote class="blockquote">Because it's funny.</blockquote>
+                        <h2 class="section-heading">The Starting point</h2>
+                        <p>Linux on the PS4 is nothing new, other people have a better account of that history in other places. The only relevant part to this endeavor is that there are images of linux distros designed to boot from a PS4, and the kernels for those linux distros are avaliable from developers far smarter than I am.</p>
+                        <p>I started my journey with the Psxitarch Image from the Psxita team, and updated by hippie86 in their linux on PS4 guide.</p>
+                        <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+                        <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+                        <h2 class="section-heading">Reaching for the Stars</h2>
+                        <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
+                        <a href="#!"><img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." /></a>
+                        <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                        <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+                        <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+                        <p>
+                            Placeholder text by
+                            <a href="http://spaceipsum.com/">Space Ipsum</a>
+                            &middot; Images by
+                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
                         </p>
                     </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Pager-->
-                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
                 </div>
             </div>
-        </div>
+        </article>
         <!-- Footer-->
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
@@ -93,7 +103,7 @@
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://github.com/huzhekun">
+                                <a href="#!">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -101,7 +111,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Zhekun Hu 2022</div>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2021</div>
                     </div>
                 </div>
             </div>
